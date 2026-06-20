@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -7,7 +7,9 @@ export default function Hero() {
 
       <p>Local Coffee brewed by Extraordinary Women in Indonesia</p>
 
-      <Button text="See our Menu" />
+      <Link href="/menu" className="primary-btn">
+        See our Menu
+      </Link>
     </section>
   );
 }
